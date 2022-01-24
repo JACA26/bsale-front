@@ -4,7 +4,7 @@
   "description": "frontend for bsale",
   "main": "index.js",
   "scripts": {
-    "build": "npm run clean && webpack --config ./webpack/webpack.config.js --env env=prod",
+    "build": "npm run clean && webpack --config ./webpack.config.js --env env=prod",
     "start": "webpack serve --config ./webpack.config.js --env env=dev --open",
     "clean": "rimraf dist",
     "babel": "babel entrada.js --out-file salida.js --presets=@babel/preset-env",
