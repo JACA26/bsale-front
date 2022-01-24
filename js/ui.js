@@ -23,7 +23,7 @@ const limpiarHTML = () => {
 
 const resetFilters = async() => {
     // resetear los filtros
-    const dataFilters = {
+    dataFilters = {
         category: null,
         orderby: 'category',
         ordermode: 'asc',
@@ -31,6 +31,9 @@ const resetFilters = async() => {
         filterName: null,
     }
     inputSearch.value = "";
+    inputSelectCategory.value = "";
+    inputSelectAttribute.value = "";
+    inputSelectTitleOrder.value = "";
     await mostrarProductos(dataFilters);
 }
 const noResultElement = () => {
